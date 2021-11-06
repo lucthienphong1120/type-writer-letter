@@ -1,0 +1,189 @@
+body {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.main {
+   display: flex;
+   margin: 1%;
+   height: 160px;
+   width: 47%;
+   justify-content: center;
+   align-items: center;
+   background-color: #ccc;
+}
+/* type 1 */
+.button1 {
+   background-image: linear-gradient(135deg, #008aff, #86d472);
+   border-radius: 5px;
+   box-sizing: border-box;
+   color: white;
+   width: 130px;
+   height: 50px;
+   font-size: 20px;
+   padding: 5px;
+   text-decoration: none;
+   cursor: pointer;
+}
+.button1 .btn1 {
+   align-items: center;
+   background: black;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   height: 100%;
+   width: 100%;
+}
+.button1:hover .btn1 {
+   background: transparent;
+ }
+.type1 {
+   margin-left: 10px;
+   font-size: 20px;
+}
+/* type 2 */
+.typing-demo {
+   width: 330px;
+   animation: type2 2s steps(22), blink2 .5s step-end infinite alternate;
+   white-space: nowrap;
+   overflow: hidden;
+   border-right: 2px solid black;
+   font-family: monospace;
+   font-size: 25px;
+}
+ 
+@keyframes type2 {
+   from {
+     width: 0
+   }
+}
+     
+@keyframes blink2 {
+   50% {
+     border-color: transparent
+   }
+}
+/* type 3 */
+.type3{
+   width: 400px;
+   border-right: 2px solid white;
+   font-size: 25px;
+   text-align: center;
+   white-space: nowrap;
+   overflow: hidden;
+   animation: type3 2s steps(22), blink3 .5s step-end infinite alternate;
+}
+@keyframes type3{
+   from {
+      width: 0;
+   }
+}
+@keyframes blink3{
+   50% {
+      border-color: transparent
+   }
+}
+ /* type 4 */
+ .type4 {
+   font-size: 35px;
+ }
+ span.typed-text {
+   color: orangered;
+ }
+ span.cursor {
+   display: inline-block;
+   width: 2px;
+   animation: blink4 1s infinite;
+ }
+ span.cursor.typing {
+   animation: none;
+ }
+ @keyframes blink4 {
+   0%  { background-color: black; }
+   49% { background-color: black; }
+   50% { background-color: transparent; }
+   99% { background-color: transparent; }
+   100%  { background-color: black; }
+ }
+ /* type 5 */
+ .type5 {
+   margin: 10px;
+ }
+ .type-title {
+   color: royalblue;
+   font-size: 20px;
+   margin: auto;
+   text-align: center;
+   white-space: nowrap;
+   overflow: hidden;
+   width: 150px;
+   animation: type5 2s steps(40,end) forwards;
+ }
+ 
+ .type-name {
+   opacity: 0;
+   font-family: "Work Sans", sans-serif;
+   margin: auto;
+   background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
+   font-size: 100px;  
+   width: 200px; /* need for animaion */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   overflow: hidden;
+   border-right: 2px solid orange;
+   animation: shring 2.2s steps(40,end) 2s forwards, blink5 .5s step-end infinite alternate;
+ }
+ 
+ @keyframes shring {
+   0% {
+     background-position: 0 0;
+     opacity: 0;
+     width: 0;
+     background-position: 0 0;
+   }
+   50% {
+     background-position: 150px 0;
+     opacity: 1;
+   }
+   100% {
+     background-position: 400px 0;
+     opacity: 1;
+   }
+ }
+ 
+ @keyframes type5 {
+   0% {
+     width: 0;
+   }
+   1%, 99%{
+     border-right: 2px solid orange;
+   }
+   100%{
+     border-right: none;
+   }
+ }
+ 
+ @keyframes blink5 {
+   50% {
+     border-color: transparent;
+   }
+ }
+ /* type 6 */
+.type6 {
+   font-size: 40px;
+}
+span.text {
+   border-right: 2px solid black;
+}
+.blue {
+   color: #4480ff;
+}
+.green {
+   color: #4caf50;
+}
+ .yellow {
+   color: #f4b400;
+}
+.red {
+  color: #f44336;
+}
