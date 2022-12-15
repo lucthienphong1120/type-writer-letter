@@ -1,3 +1,3 @@
 # type-writer-letter
 
-library type writer letter css
+type writer letter css library
